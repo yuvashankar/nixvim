@@ -6,6 +6,7 @@
 
     ./keymaps.nix
     ./options.nix
+    ./commands.nix
   ];
   globals = {
     mapleader = " ";
