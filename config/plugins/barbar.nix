@@ -9,10 +9,9 @@ in {
     {
       key = "<A-,>";
       action = "<Cmd>BufferPrevious<CR>";
-      options =
-        {
-          desc = "Move to previous buffer";
-        };
+      options = {
+        desc = "Move to previous buffer";
+      };
     }
     {
       key = "<A-.>";

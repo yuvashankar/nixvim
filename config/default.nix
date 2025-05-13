@@ -1,14 +1,16 @@
 {pkgs, ...}: {
   # Import all your configuration modules here
   imports = [
-    ./barbar.nix
-    ./keymaps.nix
     ./plugins
     ./lsp
+
+    ./keymaps.nix
+    ./options.nix
   ];
   globals = {
     mapleader = " ";
     maplocalleader = " ";
+    have_nerd_font = true;
   };
   extraPackages = with pkgs; [
     alejandra
