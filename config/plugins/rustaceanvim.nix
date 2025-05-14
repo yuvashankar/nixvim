@@ -1,3 +1,4 @@
+# Plugin to enable the rust toolchain
 {
   plugins = {
     rustaceanvim = {
@@ -5,14 +6,14 @@
       settings = {
         auto_attach = true;
         server = {
-          # cmd = [
-          #   "rustup"
-          #   "run"
-          #   "stable"
-          #   "rust-analyzer"
-          # ];
           default_settings = {
             rust-analyzer = {
+              cargo = {
+                allFeatures = true;
+              };
+              procMacro = {
+                enable = true;
+              };
               check = {
                 command = "clippy";
               };

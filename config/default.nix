@@ -3,11 +3,15 @@
   imports = [
     ./plugins
     ./lsp
-
     ./keymaps.nix
     ./options.nix
     ./commands.nix
   ];
+  # Colour Scheme
+  colorschemes.ayu = {
+    enable = true;
+    settings.mirage = true;
+  };
   globals = {
     mapleader = " ";
     maplocalleader = " ";
@@ -17,7 +21,22 @@
     alejandra
     ripgrep
   ];
+  # clipboard = {
+  #   providers = {
+  #     wl-copy-enable = true; # Wayland
+  #     xsel.enable = true; # X11
+  #     # Sync clipboard between OS and Neovim
+  #     #  Remove this option if you want your OS clipboard to remain independent.
+  #     # register = "unnamedplus";
+  #   };
+  # };
   plugins = {
     web-devicons.enable = true;
+    guess-indent.enable = true;
   };
+  # The line beneath this is called `modeline`. See `:help modeline`
+  # https://nix-community.github.io/nixvim/NeovimOptions/index.html?highlight=extraplugins#extraconfigluapost
+  extraConfigLuaPost = ''
+    -- vim: ts=2 sts=2 sw=2 et
+  '';
 }

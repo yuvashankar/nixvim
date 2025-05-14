@@ -9,6 +9,12 @@
         silent = true;
       };
     }
+    {
+      mode = "n";
+      key = "<Leader>q";
+      action = "vim.diagnostic.setloclist";
+      options = {desc = "Open diagnostic [Q]uickfix list";};
+    }
     # Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
     # for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
     # is not what someone will guess without a bit more experience.
@@ -26,7 +32,7 @@
     {
       mode = "n";
       key = "<C-h>";
-      action = "<C-w><C-d>";
+      action = "<C-w><C-h>";
       options = {
         desc = "Move focus to the left window";
       };

@@ -1,0 +1,1 @@
+{plugins = {lint = {enable = true;};};}
