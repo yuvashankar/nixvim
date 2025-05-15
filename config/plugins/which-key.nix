@@ -6,15 +6,15 @@
         delay = 0;
         spec = [
           {
-            __unkeyed-1 = "<Leader>s";
+            __unkeyed-1 = "<leader>s";
             group = "[Slearch";
           }
           {
-            __unkeyed-1 = "<Leader>t";
+            __unkeyed-2 = "<leader>t";
             group = "[T]oggle";
           }
           {
-            __unkeyed-1 = "<Leader>h";
+            __unkeyed-3 = "<leader>h";
             group = "Git [H]unk";
             mode = ["n" "v"];
           }

@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   extraPackages = with pkgs; [
-    clippy
     ruff
   ];
   autoGroups.lint.clear = true;
@@ -21,9 +20,6 @@
       enable = true;
       lintersByFt = {
         nix = ["nix"];
-        rust = [
-          "clippy"
-        ];
         python = ["ruff"];
         # json = ["jsonlint"];
       };
