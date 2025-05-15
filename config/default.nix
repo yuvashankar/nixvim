@@ -31,7 +31,9 @@
   #   };
   # };
   plugins = {
+    # Adds icons for plugins to utilize in ui
     web-devicons.enable = true;
+    # Detect tabstop and shiftwidth automatically
     guess-indent.enable = true;
   };
   # The line beneath this is called `modeline`. See `:help modeline`
