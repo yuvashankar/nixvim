@@ -7,6 +7,7 @@
     ./options.nix
     ./commands.nix
   ];
+
   # Colour Scheme
   colorschemes.ayu = {
     enable = true;
@@ -21,14 +22,14 @@
     alejandra
     ripgrep
   ];
-  # clipboard = {
-  #   providers = {
-  #     wl-copy-enable = true; # Wayland
-  #     xsel.enable = true; # X11
-  #     # Sync clipboard between OS and Neovim
-  #     #  Remove this option if you want your OS clipboard to remain independent.
-  #     # register = "unnamedplus";
-  #   };
+  clipboard = {
+    # providers = {
+    #   wl-copy-enable = true; # Wayland
+    #   xsel.enable = true; # X11
+    # Sync clipboard between OS and Neovim
+    #  Remove this option if you want your OS clipboard to remain independent.
+    register = "unnamedplus";
+  };
   # };
   plugins = {
     # Adds icons for plugins to utilize in ui

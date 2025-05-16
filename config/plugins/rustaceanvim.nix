@@ -4,6 +4,7 @@
     rustaceanvim = {
       enable = true;
       settings = {
+        # dap.autoload_configurations = false;
         auto_attach = true;
         server = {
           default_settings = {

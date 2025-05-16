@@ -11,7 +11,7 @@
     }
     {
       mode = "n";
-      key = "<Leader>q";
+      key = "<leader>q";
       action = "vim.diagnostic.setloclist";
       options = {desc = "Open diagnostic [Q]uickfix list";};
     }

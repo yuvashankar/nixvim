@@ -32,7 +32,7 @@ in {
       };
     }
     {
-      key = "<A-<>";
+      key = "<A->>";
       action = "<Cmd>BufferMoveNext<CR>";
       options = {
         desc = "Reorder buffer to previous";

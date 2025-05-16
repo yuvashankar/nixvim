@@ -1,5 +1,6 @@
 {
   imports = [
+    ./debug.nix
     ./blink.nix
     ./mini.nix
     ./lint.nix
