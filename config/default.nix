@@ -21,16 +21,20 @@
   extraPackages = with pkgs; [
     alejandra
     ripgrep
+    nerd-fonts.zed-mono
+    nixfmt-rfc-style
   ];
+
   clipboard = {
-    # providers = {
-    #   wl-copy-enable = true; # Wayland
-    #   xsel.enable = true; # X11
     # Sync clipboard between OS and Neovim
-    #  Remove this option if you want your OS clipboard to remain independent.
+    # Remove this option if you want your OS clipboard to remain independent.
     register = "unnamedplus";
+    providers = {
+      wl-copy.enable = true; # Wayland
+      xsel.enable = true; # X11
+    };
   };
-  # };
+
   plugins = {
     # Adds icons for plugins to utilize in ui
     web-devicons.enable = true;

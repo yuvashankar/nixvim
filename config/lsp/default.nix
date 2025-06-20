@@ -115,21 +115,18 @@
           enable = true;
           settings = {
             nixpkgs = {
-              expr = "import <nixpkgs> {}";
+              expr = "import <nixpkgs> { }";
             };
             formatting.command = ["alejandra"];
             options = {
               # nixos = {
-              #   expr = ''
-              #     let configs = (builtins.getFlake "${flakeRoot}").nixosConfigurations;
-              #     in (builtins.head (builtins.attrValues configs)).options
-              #   '';
+              #   expr = "${flakeRoot}.nixosConfigurations.yuvashankar-desktop.options";
               # };
-              # home_manager = {
-              #   expr = ''
-              #     (builtins.getFlake "${flakeRoot}").nixosConfigurations.${config.hostSpec.hostName}.options.home-manager.users.value.${config.hostSpec.username}
-              #   '';
-              # };
+              #   home_manager = {
+              #     expr = ''
+              #       (builtins.getFlake "${flakeRoot}").nixosConfigurations.${config.hostSpec.hostName}.options.home-manager.users.value.${config.hostSpec.username}
+              #     '';
+              #   };
             };
           };
         };
