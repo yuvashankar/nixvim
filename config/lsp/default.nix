@@ -119,9 +119,9 @@
             };
             formatting.command = ["alejandra"];
             options = {
-              # nixos = {
-              #   expr = "${flakeRoot}.nixosConfigurations.yuvashankar-desktop.options";
-              # };
+              nixos = {
+                expr = "(builtins.getFlake git+https://codeberg.org/yuvashankar/nix-config).nixosConfigurations.yuvashankar-desktop.options";
+              };
               #   home_manager = {
               #     expr = ''
               #       (builtins.getFlake "${flakeRoot}").nixosConfigurations.${config.hostSpec.hostName}.options.home-manager.users.value.${config.hostSpec.username}
