@@ -2,7 +2,7 @@
   keymaps = [
     {
       key = "\\";
-      action = ":Neotree reveal<CR>";
+      action = ":Neotree toggle<CR>";
       options = {
         desc = "Toggle directory";
         silent = true;
