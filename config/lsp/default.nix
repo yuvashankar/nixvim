@@ -119,16 +119,16 @@
             };
             formatting.command = ["alejandra"];
             # This is hardcoded, I couldn't figure out how to make this a module option with the flake-parts flake input that is used right now.
-            options = {
-              nixos = {
-                expr = "(builtins.getFlake git+https://codeberg.org/yuvashankar/nix-config).nixosConfigurations.yuvashankar-desktop.options";
-              };
-              home_manager = {
-                expr = ''
-                  (builtins.getFlake git+https://codeberg.org/yuvashankar/nix-config).nixosConfigurations.yuvashankar-desktop.options.home-manager.users.value.vinay
-                '';
-              };
-            };
+            # options = {
+            #   nixos = {
+            #     expr = "(builtins.getFlake git+https://codeberg.org/yuvashankar/nix-config).nixosConfigurations.yuvashankar-desktop.options";
+            #   };
+            #   home_manager = {
+            #     expr = ''
+            #       (builtins.getFlake git+https://codeberg.org/yuvashankar/nix-config).nixosConfigurations.yuvashankar-desktop.options.home-manager.users.value.vinay
+            #     '';
+            #   };
+            # };
           };
         };
 
